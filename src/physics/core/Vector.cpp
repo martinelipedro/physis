@@ -15,3 +15,13 @@ Vector3 Vector3::operator-() const
 {
     return Vector3(-this->x, -this->y, -this->z);
 }
+
+Vector3 Vector3::operator+(Vector3& vector) const
+{
+    return Vector3(this->x + vector.x, this->y + vector.y, this->z + vector.z);
+}
+
+Vector3 Vector3::operator-(Vector3& vector) const
+{
+    return Vector3(this->x - vector.x, this->y - vector.y, this->z - vector.z);
+}

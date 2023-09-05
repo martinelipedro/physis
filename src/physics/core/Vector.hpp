@@ -14,6 +14,8 @@ public:
     void negate();
 
     Vector3 operator-() const;
+    Vector3 operator+(Vector3& vector) const;
+    Vector3 operator-(Vector3& vector) const;
 };
 
 #endif
