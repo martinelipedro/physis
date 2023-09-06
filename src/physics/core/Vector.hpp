@@ -16,6 +16,7 @@ public:
     Vector3 operator-() const;
     Vector3 operator+(Vector3& vector) const;
     Vector3 operator-(Vector3& vector) const;
+    void operator=(Vector3 vector);
 };
 
 #endif
