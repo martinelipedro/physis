@@ -12,7 +12,7 @@ public:
     Vector3(const float x, const float y, const float z);
 
     void negate();
-    
+    float scalar_product(Vector3& vector);
 
     Vector3 operator-() const;
     Vector3 operator+(Vector3& vector) const;
