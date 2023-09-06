@@ -26,7 +26,12 @@ Vector3 Vector3::operator-(Vector3& vector) const
     return Vector3(this->x - vector.x, this->y - vector.y, this->z - vector.z);
 }
 
-void Vector3::operator=(Vector3 vector)
+void Vector3::operator+=(Vector3& vector)
 {
-    *(this) = vector;
+    *(this) = this->operator+(vector);
+}
+
+void Vector3::operator-=(Vector3& vector)
+{
+    *(this) = this->operator-(vector);
 }
