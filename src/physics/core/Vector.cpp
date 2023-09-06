@@ -11,7 +11,7 @@ void Vector3::negate()
     this->z = -this->z;
 }
 
-float Vector3::scalar_product(Vector3& vector)
+float Vector3::scalar_product(Vector3& vector) const
 {
     return (this->x * vector.x + this->y * vector.y + this->z + vector.z);
 }
