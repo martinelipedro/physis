@@ -10,10 +10,15 @@ void Vector2::negate()
     this->y = -this->y;
 }
 
+
+Vector2 Vector2::scaled(float scalar)
+{
+    return Vector2(this->x * scalar, this->y * scalar);
+}
+
 void Vector2::scale(float scalar)
 {
-    this->x *= scalar;
-    this->y *= scalar;
+    *(this) = this->scaled(scalar);
 }
 
 float Vector2::scalar_product(Vector2& vector) const

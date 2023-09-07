@@ -10,6 +10,7 @@ public:
     Vector2(const float x, const float y);
 
     void negate();
+    Vector2 scaled(float scalar);
     void scale(float scalar);
     float scalar_product(Vector2& vector) const;
 
