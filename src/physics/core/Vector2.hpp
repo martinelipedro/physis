@@ -15,11 +15,11 @@ public:
     float scalar_product(Vector2& vector) const;
 
     Vector2 operator-() const;
-    Vector2 operator+(Vector2& vector) const;
-    Vector2 operator-(Vector2& vector) const;
-    float operator*(Vector2& vector) const;
-    void operator+=(Vector2& vector);
-    void operator-=(Vector2& vector);
+    Vector2 operator+(Vector2 vector) const;
+    Vector2 operator-(Vector2 vector) const;
+    float operator*(Vector2 vector) const;
+    void operator+=(Vector2 vector);
+    void operator-=(Vector2 vector);
 };
 
 #endif

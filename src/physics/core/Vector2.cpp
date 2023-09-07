@@ -10,7 +10,6 @@ void Vector2::negate()
     this->y = -this->y;
 }
 
-
 Vector2 Vector2::scaled(float scalar)
 {
     return Vector2(this->x * scalar, this->y * scalar);
@@ -31,27 +30,27 @@ Vector2 Vector2::operator-() const
     return Vector2(-this->x, -this->y);
 }
 
-Vector2 Vector2::operator+(Vector2& vector) const
+Vector2 Vector2::operator+(Vector2 vector) const
 {
     return Vector2(this->x + vector.x, this->y + vector.y);
 }
 
-Vector2 Vector2::operator-(Vector2& vector) const
+Vector2 Vector2::operator-(Vector2 vector) const
 {
     return Vector2(this->x - vector.x, this->y - vector.y);
 }
 
-float Vector2::operator*(Vector2& vector) const
+float Vector2::operator*(Vector2 vector) const
 {
     return this->scalar_product(vector);
 }
 
-void Vector2::operator+=(Vector2& vector)
+void Vector2::operator+=(Vector2 vector)
 {
     *(this) = this->operator+(vector);
 }
 
-void Vector2::operator-=(Vector2& vector)
+void Vector2::operator-=(Vector2 vector)
 {
     *(this) = this->operator-(vector);
 }
