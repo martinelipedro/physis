@@ -8,12 +8,14 @@ A hobby-made 3D physics simulator made with C++ and OpenGL.
 ## Roadmap
 
 - Physics
-    - Core
-    - Particles
-    - Rigidbody
-        - Collision detection
-    - Softbody
-    - Fluids
+    - 2D 
+      - Core
+      - Particles
+      - Rigidbody
+          - Collision detection
+      - Softbody
+      - Fluids
+    - 3D 
     - Simulation in non-Euclidean spaces
 
 - Graphics
