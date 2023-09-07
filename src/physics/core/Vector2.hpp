@@ -8,6 +8,16 @@ public:
 public:
     Vector2();
     Vector2(const float x, const float y);
+
+    void negate();
+    float scalar_product(Vector2& vector) const;
+
+    Vector2 operator-() const;
+    Vector2 operator+(Vector2& vector) const;
+    Vector2 operator-(Vector2& vector) const;
+    float operator*(Vector2& vector) const;
+    void operator+=(Vector2& vector);
+    void operator-=(Vector2& vector);
 };
 
 #endif
