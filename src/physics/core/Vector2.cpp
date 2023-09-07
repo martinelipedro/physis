@@ -10,6 +10,12 @@ void Vector2::negate()
     this->y = -this->y;
 }
 
+void Vector2::scale(float scalar)
+{
+    this->x *= scalar;
+    this->y *= scalar;
+}
+
 float Vector2::scalar_product(Vector2& vector) const
 {
     return (this->x * vector.x + this->y * vector.y);

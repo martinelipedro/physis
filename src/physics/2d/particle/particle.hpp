@@ -1,9 +1,0 @@
-#ifndef PHYSIS_PHYSICS_2D_PARTICLE_HPP
-#define PHYSIS_PHYSICS_2D_PARTICLE_HPP
-
-class Particle2D
-{
-
-};
-
-#endif

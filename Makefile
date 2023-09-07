@@ -7,10 +7,12 @@ SRC_DIR = ./src
 EXE_NAME = physis
 GXX = g++
 
+INCLUDE = ./src
+
 .PHONY: all run clean
 
 all: $(OBJECTS)
-	$(GXX) $(BIN_DIR)/*.o -o $(BIN_DIR)/$(EXE_NAME)
+	$(GXX) $(BIN_DIR)/*.o -o $(BIN_DIR)/$(EXE_NAME) 
 
 run: all
 	$(BIN_DIR)/$(EXE_NAME)
